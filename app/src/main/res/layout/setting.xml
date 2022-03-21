@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/error_range_tv"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/reset_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="562dp"
+        android:layout_marginLeft="562dp"
+        android:layout_marginTop="177dp"
+        android:onClick="changtostart"
+        android:text="reset_mid" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="37dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/textView24"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/eg"
+        android:layout_toRightOf="@+id/eg"
+        android:text="%"
+        android:textSize="36sp"
+         />
+
+    <Button
+        android:id="@+id/bnt_reset_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="555dp"
+        android:layout_marginLeft="555dp"
+        android:layout_marginTop="62dp"
+        android:onClick="changtostart"
+        android:text="將此單修改為未完成" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/textView22"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/eg"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="261dp"
+        android:layout_toEndOf="@+id/textView22"
+        android:ems="10"
+        android:inputType="text"
+         />
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="220dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="前" />
+
+        <RadioButton
+            android:id="@+id/ucamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="後" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="0dp"
+        android:text="IP"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="100dp"
+        android:text="色碼方向"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="85dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/r_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:focusable="auto"
+            android:text="右               " />
+
+        <RadioButton
+            android:id="@+id/l_radio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="左" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/mcolor_White"
+        app:srcCompat="@mipmap/ic_arrow_forward" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/mcolor_White"
+        app:srcCompat="@mipmap/ic_arrow_back" />
+
+    <Spinner
+        android:id="@+id/dept"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="180dp"
+        android:entries="@array/deptItems" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="175dp"
+        android:text="部門"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="220dp"
+        android:text="相機鏡頭"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="22dp"
+        android:text="電鍍數量允許誤差"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="52dp"
+        android:text="廠區"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_start_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="252dp"
+        android:layout_marginLeft="252dp"
+        android:layout_marginTop="334dp"
+        android:text="可改開始" />
+
+    <RadioGroup
+        android:id="@+id/facroryNo_g"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="49dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/facroryNo_g1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/facroryNo_g"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/facroryNo_g2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="573dp"
+        android:layout_marginLeft="573dp"
+        android:layout_marginTop="0dp"
+        android:onClick="send_urlsting_click"
+        android:text="傳送url" />
+
+    <Button
+        android:id="@+id/settinghide"
+        android:layout_width="match_parent"
+        android:layout_height="562dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="163dp"
+        android:background="@color/ic_launcher_background"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_sendline_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="無法登入"
+        android:onClick="send_line_click_login"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_sendline_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="無法登出"
+        android:onClick="send_line_click_logout"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/btn_sendline_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="send_line_click_start"
+        android:text="製程無法開始"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_sendline_finsh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="send_line_click_finsh"
+        android:text="製程無法完成"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_sendline_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="無法列印工作日報"
+        android:onClick="send_line_click_report"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btn_sendException"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他錯誤"
+        android:onClick="send_line_click_Exception"
+        android:textSize="30sp" />
+</LinearLayout>

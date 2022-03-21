@@ -1,0 +1,2186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewb"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/mcolor_Black"
+        android:padding="3dp"
+        android:visibility="gone"
+        app:srcCompat="@color/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="53dp"
+
+        android:layout_marginEnd="80dp"
+
+        android:width="3dip"
+
+
+        android:adjustViewBounds="true"
+        android:bottom="1dp"
+        android:color="#ff0000"
+        android:padding="2dip"
+        android:right="1dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginBottom="8dp"
+        android:text="Bắt đầu sản xuất"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="-211dp"
+        android:onClick="getm"
+        android:text="取得機台"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/Machine"
+        android:layout_width="365dp"
+        android:layout_height="608dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/zxing_custom_possible_result_points"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/finsh_thai"
+        android:layout_marginStart="-8dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toEndOf="@+id/PPM_text_value"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/COLOR_NUM_text_value"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getg"
+        android:layout_alignStart="@+id/getu"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="-222dp"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/v_text_value"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getg"
+        android:layout_alignStart="@+id/getu"
+        android:layout_marginStart="86dp"
+        android:layout_marginBottom="-269dp"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/DELDATE_text_value"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getg"
+        android:layout_alignStart="@+id/getu"
+        android:layout_marginStart="91dp"
+        android:layout_marginBottom="-88dp"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/COLOR_NUM_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="-213dp"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/sumOfNaiBei_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-247dp"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/DELDATE_text_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="-76dp"
+        android:text="出貨日"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Machine"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="418dp"
+        android:layout_marginTop="31dp"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignTop="@+id/Machine"
+        android:layout_marginStart="-35dp"
+        android:layout_marginTop="6dp"
+        android:text="機台"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="false"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="0dp"
+
+        android:layout_marginTop="200dp"
+        android:onClick="login"
+        android:text="登入  Đăng nhập" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="179dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="scan"
+        android:text="掃描\nQuét đơn mới"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="false"
+        android:layout_marginStart="760dp"
+        android:layout_marginTop="0dp"
+        android:onClick="viwes"
+        android:text="顯示已讀入變數"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="149dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="-9dp"
+        android:layout_marginRight="-9dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/logout"
+        android:layout_toLeftOf="@+id/logout"
+        android:onClick="edit_set01"
+        android:text="完成\nKết thúc sản xuất"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/mcolor_Gold"
+        android:textSize="24sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/getu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:onClick="getu"
+        android:text="Button"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/getg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:onClick="getg"
+        android:text="Button"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/sptest"
+        android:layout_width="148dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="323dp"
+        android:layout_marginLeft="323dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="spedit"
+        android:text="製程檢驗"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="10dp"
+        android:spinnerMode="dialog"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/accident"
+        android:layout_width="167dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="575dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_toRightOf="@+id/button4"
+        android:onClick="accident1"
+        android:stateListAnimator="@null"
+        android:text="開始"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/now_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/furyu_Texted"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/testip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="-187dp"
+        android:layout_marginEnd="-196dp"
+        android:layout_toStartOf="@+id/textView16"
+        android:onClick="testip"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="getm"
+        android:text="Button"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/messageview"
+        android:layout_width="15000dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1347dp"
+        android:layout_marginBottom="74dp"
+        android:layout_toStartOf="@+id/imageView3"
+        android:background="@color/mcolor_Gold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="250dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="750dp"
+        android:onClick="colorseach"
+        android:paddingLeft="0dp"
+        android:text="色碼查詢"
+        android:visibility="invisible"
+        tools:text="色碼查詢" />
+
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="700dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="311dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="229dp"
+        android:onClick="start"
+        android:text="Button"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/url_Texted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="700dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/GET_INFO"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/midtext"
+        android:layout_toRightOf="@+id/midtext"
+        android:background="@drawable/ic_refresh"
+        android:onClick="getinfo"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/Supervisor_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Supervisor_check"
+        android:text="Button"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/views2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/start"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="900dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="more"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_list" />
+
+    <Button
+        android:id="@+id/mid_select"
+        android:layout_width="69dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="367dp"
+        android:layout_marginTop="35dp"
+        android:onClick="mid_select_map"
+        android:text="機台"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/midtext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="439dp"
+        android:layout_marginTop="37dp"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/testbnt"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageView4"
+        android:onClick="testnbnnt"
+        android:text="連線測試"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_toEndOf="@+id/now_textView"
+        android:layout_toRightOf="@+id/now_textView"
+        android:onClick="localtest"
+        android:text="連線測試"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/bnt_myPrd"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:onClick="myPodRecords"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_list" />
+
+    <Button
+        android:id="@+id/part_finish"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginRight="-6dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/test"
+        android:layout_toLeftOf="@+id/test"
+        android:onClick="part_finish"
+        android:text="小批完成"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/views"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="920dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:onClick="views"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/report"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_toStartOf="@+id/setting"
+        android:layout_toLeftOf="@+id/setting"
+        android:onClick="maintain"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_build" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toStartOf="@+id/report"
+        android:layout_toLeftOf="@+id/report"
+        android:background="@android:drawable/ic_menu_edit"
+        android:onClick="admin"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:onClick="Supervisor_check"
+        android:text="Supervisor_check"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1172dp"
+        android:layout_marginLeft="1172dp"
+        android:layout_marginTop="259dp"
+        android:onClick="portal"
+        android:text="portal"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginRight="169dp"
+        android:layout_marginBottom="180dp"
+        android:onClick="plating_views"
+        android:visibility="gone"
+        app:srcCompat="@mipmap/ic_help" />
+
+    <Button
+        android:id="@+id/warehouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="89dp"
+        android:layout_toEndOf="@+id/button2"
+        android:onClick="warehouse"
+        android:text="取庫"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="375dp"
+        android:layout_marginLeft="375dp"
+        android:layout_marginTop="66dp"
+        android:text="Chọn máy             	Nhận thông tin"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/hide_bnt1"
+        android:layout_width="905dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="370dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="143dp"
+        android:background="@color/ic_launcher_background"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/hide_bnt2"
+        android:layout_width="642dp"
+        android:layout_height="228dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="638dp"
+        android:layout_marginLeft="638dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/ic_launcher_background"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="exit_start"
+        android:text="登出 Đăng xuất"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/time"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="401dp"
+        android:layout_marginLeft="401dp"
+        android:layout_marginTop="84dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="499dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mfo_id_text_title"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="工令單號"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/mfo_id_text_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/getu"
+                android:layout_marginStart="61dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/SUBFLOWID_text_title"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="-38dp"
+                android:text="        速碼"
+                android:textSize="24sp"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/SUBFLOWID_text_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="87dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/BATCH_NO_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="-38dp"
+                android:text="流程單號"
+                android:textSize="24sp"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/BATCH_NO_text_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="87dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/BATCH_QTY_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:text="支數"
+                android:textSize="24sp"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/BATCH_QTY_text_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/RTYPE_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="53dp"
+                android:text="型號"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/RTYPE_text_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/getu"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="85dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/VAL_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:text="阻值"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/VAL_text_value"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/getu"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="88dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TOL_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="-108dp"
+                android:text="阻值範圍"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/TOL_text_value"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView10"
+                android:layout_alignStart="@+id/getu"
+                android:layout_marginStart="96dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/PPM_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="52dp"
+                android:text="PPM"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/PPM_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/getu"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="91dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/WAREHouse_QTY_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="52dp"
+                android:text="取庫數量"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/WAREHouse_QTY_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/getu"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="91dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/v_flow_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:text="本製程已完成"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/preNaiBei_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/info_bnt"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="92dp"
+                android:background="@color/mcolor_Red"
+                android:onClick="check_info"
+                android:text="注意事項"
+                android:textColor="@color/mcolor_White"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/terrible_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/button47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button"
+                        android:visibility="invisible"
+                        tools:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/check_p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/InputQuan_Texted"
+                        android:layout_alignEnd="@+id/furyu_Texted"
+                        android:layout_marginEnd="17dp"
+                        android:onClick="check_scan"
+                        android:text="見證人"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="翻車次數   "
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+                    <Spinner
+                        android:id="@+id/terrible_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_lay"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="373dp"
+        android:layout_marginTop="68dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Button"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/machineID_Texted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginStart="-35dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/MachineParams_Texted"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView"
+                android:layout_margin="0dp"
+                android:layout_marginStart="76dp"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="0dp"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/DEPT_Texted"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_margin="0dp"
+                android:layout_marginStart="380dp"
+                android:ems="10"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_alignParentTop="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="-120dp"
+                android:onClick="testclick"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="298dp"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/material_issue_bnt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:onClick="material_issue"
+                android:text="不合格"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/user_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginStart="309dp"
+                android:onClick="user_select"
+                android:text="底漆人員"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/shift_bnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="shift_flow"
+                android:text="挪用"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/color_userbnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginStart="403dp"
+                android:onClick="user_select2"
+                android:text="色碼人員"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <CheckBox
+                android:id="@+id/TieDaicheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="tcheck_cilck"
+                android:text="工令單內項完成"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/TieDaigroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/rd_tdqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:onClick="rd_quty_chk"
+                    android:text="支數" />
+
+                <RadioButton
+                    android:id="@+id/rd_roll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="rd_roll_chk"
+                    android:text="捲數" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginStart="2dp"
+                android:text="開始數量"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/InputQuan_Texted"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="100"
+                android:selectAllOnFocus="true"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/NGselecdt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="3dp"
+                android:padding="0dp"
+                android:text="已完成"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/final_Texted"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="7dp"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:hint="Đã hoàn thành"
+                android:inputType="number"
+                android:maxLength="50"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/finsh_thai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="558dp"
+                android:text="Đã hoàn thành"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ful"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/def_bnt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="284dp"
+                android:onClick="Defect_input"
+                android:text="不良品"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/furyu_Texted"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                android:hint="Số lượng -xấu"
+
+                android:inputType="number"
+                android:maxLength="50"
+                android:selectAllOnFocus="true"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="149dp"
+                android:text="不良品"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/def_thai"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="549dp"
+                android:text="Số lượng -xấu"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/tied_f_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/tied_f_st"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="si"
+                    android:checked="true"
+                    android:text="餘料" />
+
+                <RadioButton
+                    android:id="@+id/tied_f_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交接"
+                    android:onClick="st"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:text="交接料"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+
+
+                <EditText
+                    android:id="@+id/AccQuan_Texted"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/DEPT_Texted"
+                    android:layout_alignTop="@+id/textView10"
+                    android:layout_marginStart="13dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/bnt_todef"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:onClick="todef"
+                    android:text="無餘料\nKhông dư thừa vật liệu"
+                    android:visibility="gone" /> </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnt_todef1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:onClick="todef"
+                android:text="無餘料"
+                android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="-30dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/Painting_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="已完成"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/color_left"
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/color_right2"
+                android:layout_alignRight="@+id/color_right2"
+                android:layout_margin="0dp"
+                android:layout_marginStart="850dp"
+                android:layout_marginEnd="-62dp"
+                android:paddingTop="-25dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_arrow_back" />
+
+            <ImageView
+                android:id="@+id/color_left2"
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/start"
+                android:layout_alignRight="@+id/start"
+                android:layout_margin="0dp"
+                android:layout_marginStart="790dp"
+                android:layout_marginEnd="44dp"
+                android:paddingTop="-25dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_arrow_back" />
+
+            <ImageView
+                android:id="@+id/color_left3"
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/start"
+                android:layout_alignRight="@+id/start"
+                android:layout_margin="0dp"
+                android:layout_marginStart="730dp"
+                android:layout_marginEnd="-88dp"
+                android:paddingTop="-25dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_arrow_back" />
+
+            <ImageView
+                android:id="@+id/color_right"
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/start"
+                android:layout_alignRight="@+id/start"
+                android:layout_margin="0dp"
+                android:layout_marginStart="900dp"
+                android:layout_marginEnd="-986dp"
+                android:layout_toStartOf="@+id/textView17"
+                android:layout_toLeftOf="@+id/textView17"
+                android:paddingTop="-30dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_arrow_forward" />
+
+            <ImageView
+                android:id="@+id/color_right3"
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/start"
+                android:layout_alignRight="@+id/start"
+                android:layout_margin="0dp"
+                android:layout_marginStart="780dp"
+                android:layout_marginEnd="12dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_arrow_forward" />
+
+            <ImageView
+                android:id="@+id/color_right2"
+                android:layout_width="59dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/start"
+                android:layout_alignRight="@+id/start"
+                android:layout_margin="0dp"
+                android:layout_marginStart="840dp"
+                android:layout_marginEnd="42dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_arrow_forward" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="visible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="visible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="223dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="173dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="false"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+
+                android:visibility="invisible"
+                app:srcCompat="@color/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView88"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="22dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="306dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="gone"
+                app:srcCompat="@color/mcolor_White" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="25dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="306dp"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="gone"
+                app:srcCompat="@android:color/holo_orange_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="0dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="0dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="269dp"
+                android:layout_weight="1"
+                android:background="@color/mcolor_Black"
+                android:padding="3dp"
+                android:visibility="invisible"
+                app:srcCompat="@color/mcolor_White" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/Colorinfo"
+            android:layout_width="144dp"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="201dp"
+            android:textColor="@color/mcolor_Red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/color_bnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="0dp"
+                android:layout_marginStart="862dp"
+                android:onClick="color"
+                android:text="色碼查詢"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="right"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/note_value"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:hint="備註"
+                android:inputType="textMultiLine"
+                android:padding="0dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/send_bnt"
+                android:layout_width="51dp"
+                android:layout_height="37dp"
+                android:layout_alignEnd="@+id/url_Texted"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/ic_send"
+                android:onClick="send"
+                android:paddingRight="0dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toStartOf="@+id/views2"
+        android:layout_toLeftOf="@+id/views2"
+        android:onClick="setting"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <ImageButton
+        android:id="@+id/btn_sendline"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginRight="278dp"
+        android:layout_toStartOf="@+id/views2"
+        android:layout_toLeftOf="@+id/views2"
+        android:onClick="send_line"
+        android:visibility="visible"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <Button
+        android:id="@+id/button38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="0dp"
+        android:onClick="getg"
+        android:text="Button"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginBottom="187dp"
+        android:onClick="testerr"
+        android:text="Button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="369dp"
+        android:layout_marginLeft="369dp"
+        android:layout_marginTop="329dp"
+        android:onClick="login_again"
+        android:text="閃退重登"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="486dp"
+        android:layout_marginLeft="486dp"
+        android:layout_marginTop="326dp"
+        android:onClick="wifi"
+        android:text="檢查網路"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/shotsub_button"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="getshort2"
+            android:text="速碼"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/shotsub_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="Tốc độ mã số"
+            android:inputType="number"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/coworker_bnt"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="267dp"
+        android:layout_marginRight="228dp"
+        android:background="@drawable/ic_people_outline"
+        android:onClick="coworker"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/wifi_bnt2"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="228dp"
+        android:background="@mipmap/ic_wifi"
+        android:onClick="wifi"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="136dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="515dp"
+        android:layout_marginLeft="515dp"
+        android:layout_marginTop="581dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="202dp"
+        app:srcCompat="@drawable/firstohm" />
+
+    <LinearLayout
+        android:id="@+id/Process_sw_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="370dp"
+        android:layout_marginRight="370dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="目前製程："
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Process_bnt"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="Process_sw"
+            android:text="請選擇 底漆/色碼"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

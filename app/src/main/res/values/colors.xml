@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#0BEBCC</color>
+    <color name="colorAccent">#e188a9</color>
+    <color name="comm1">#E188A9</color>
+    <color name="mcolor_Black">#000000</color><!--黑    0, 0, 0 -->
+    <color name="mcolor_Brown">#993300</color><!--棕    153, 51, 0 -->
+    <color name="mcolor_Red">#FF0000</color><!--紅    255, 0, 0 -->
+    <color name="mcolor_Orange">#FF6600</color><!--橙    255, 102, 0 -->
+    <color name="mcolor_Yellow">#FFFF00</color><!--黃    255, 255, 0 -->
+    <color name="mcolor_Green">#009900</color><!--綠    0, 153, 0 -->
+    <color name="mcolor_Blue">#0000FF</color><!--藍    0, 0, 255 -->
+    <color name="mcolor_Purple">#9900FF</color><!--紫    153, 0, 255 -->
+    <color name="mcolor_Gray">#999999</color><!--灰    153, 153, 153 -->
+    <color name="mcolor_White">#FFFFFF</color><!--白    255, 255, 255 -->
+    <color name="mcolor_Gold">#fcc29c</color><!--金    255, 204, 0 -->
+    <color name="mcolor_Silver">#CCCCCC</color><!--銀    204, 204, 204 -->
+</resources>

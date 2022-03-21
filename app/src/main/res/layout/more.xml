@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:onClick="myPodRecords"
+                        android:text="我的生產查詢"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:onClick="views"
+                        android:text="本流程單檢驗查詢"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button23"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="未完成流程單"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button13"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:onClick="prdStepRecords"
+                        android:text="本流程單製程查詢"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button30"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:onClick="usedingmid"
+                        android:text="使用中機台查詢"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button22"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:onClick="QueryNaibei"
+                        android:text="本日電鍍查詢"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/moreprogressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

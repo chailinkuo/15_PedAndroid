@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "491164157956",
+    "firebase_url": "https://temp-slogin.firebaseio.com",
+    "project_id": "temp-slogin",
+    "storage_bucket": "temp-slogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491164157956:android:7913431dcdc0ee6a",
+        "android_client_info": {
+          "package_name": "firstohm.t"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491164157956-sdes9uj93l6qktiq9844fhnvhpjsarud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7v5HGRFe_P4lV93Z_mj-oGS9LAzz-aDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491164157956-sdes9uj93l6qktiq9844fhnvhpjsarud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
